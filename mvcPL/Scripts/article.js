@@ -1,0 +1,3 @@
+﻿function clearCommentTextField() {
+    $("#Text").val("");
+}

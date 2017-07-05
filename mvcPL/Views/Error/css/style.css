@@ -1,0 +1,346 @@
+/*--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*--- reset code ---*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* start editing from here */
+
+a { text-decoration: none; }
+
+.txt-rt { text-align: right; }
+
+/* text align right */
+
+.txt-lt { text-align: left; }
+
+/* text align left */
+
+.txt-center {
+    text-align: center;
+    /*-- W3Layouts --*/
+}
+
+/* text align center */
+
+.float-rt { float: right; }
+
+/* float right */
+
+.float-lt { float: left; }
+
+/* float left */
+
+.clear { clear: both; }
+
+/* clear float */
+
+.pos-relative { position: relative; }
+
+/* Position Relative */
+
+.pos-absolute { position: absolute; }
+
+/* Position Absolute */
+
+.vertical-base { vertical-align: baseline; }
+
+/* vertical align baseline */
+
+.vertical-top { vertical-align: top; }
+
+/* vertical align top */
+
+nav.vertical ul li { display: block; }
+
+/* vertical menu */
+
+nav.horizontal ul li { display: inline-block; }
+
+/* horizontal menu */
+
+img { max-width: 100%; }
+
+/*--- end reset code ---*/
+
+body {
+    background: url(../images/wood.png);
+    background-repeat: repeat;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1.header-w3ls {
+    color: #F15F22;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*-- text masking --*/
+
+.container-w3layouts {
+    -webkit-transform-style: preserve-3d;
+    margin: 0 auto;
+    text-align: center;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+svg {
+    -webkit-filter: drop-shadow(-30px 20px 10px rgba(0, 0, 0, 0.4));
+    font-family: 'Roboto', sans-serif;
+    font-size: 20em;
+    font-weight: 500;
+    height: 400px !important;
+    margin-left: 115px;
+    outline: 1px solid transparent;
+    width: 700px !important;
+}
+
+/* you can use this to apply the clippath to the image if you don't want to reference it as an attribute of that image */
+
+/*
+image {
+	clip-path: url(#my-path);
+}
+*/
+
+/*-- /text masking --*/
+
+p.error-agileits {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0 165px;
+    text-align: center;
+}
+
+p.copyright {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+p.copyright a { color: #f15f22; }
+
+p.copyright a:hover { color: #36b051; }
+
+/*-- responsive design --*/
+
+@media (max-width: 1600px) {
+    p.error-agileits { margin: 0 0 140px; }
+}
+
+@media (max-width: 1366px) {
+    p.error-agileits { margin: 0px 0 130px; }
+
+    svg { margin-top: -25px; }
+}
+
+@media (max-width: 1024px) {
+    svg {
+        font-size: 15em;
+        margin-left: 230px;
+        margin-top: -60px;
+    }
+
+    p.error-agileits { margin: -20px 0 100px; }
+}
+
+@media (max-width: 900px) {
+    svg {
+        font-size: 16em;
+        margin-left: 215px;
+        margin-top: -60px;
+        width: 670px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    svg {
+        font-size: 17em;
+        margin-left: 175px;
+        margin-top: -60px;
+        width: 600px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    svg {
+        font-size: 17em;
+        margin-left: 171px;
+        margin-top: -60px;
+        width: 580px !important;
+    }
+}
+
+@media (max-width: 736px) {
+    h1.header-w3ls {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    svg {
+        font-size: 17em;
+        height: 285px !important;
+        margin-left: 160px;
+        margin-top: -20px;
+        width: 550px !important;
+    }
+
+    p.error-agileits { margin: -20px 0 65px; }
+
+    p.copyright {
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 667px) {
+    svg {
+        font-size: 19em;
+        margin-left: 115px;
+        margin-top: -20px;
+        width: 500px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    p.error-agileits { margin: 0px 0 40px; }
+}
+
+@media (max-width: 600px) {
+    p.error-agileits { margin: -40px 0 27px; }
+
+    svg {
+        font-size: 19em;
+        margin-left: 96px;
+        margin-top: -20px;
+        width: 460px !important;
+    }
+}
+
+@media (max-width: 568px) {
+    svg {
+        font-size: 19em;
+        margin-left: 96px;
+        margin-top: -20px;
+        width: 430px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.header-w3ls {
+        font-size: 40px;
+        letter-spacing: 5px;
+        padding-top: 20px;
+    }
+
+    svg {
+        font-size: 19em;
+        margin-left: 85px;
+        margin-top: -20px;
+        width: 380px !important;
+    }
+
+    p.error-agileits { margin: -60px 0 27px; }
+}
+
+@media (max-width: 414px) {
+    h1.header-w3ls {
+        font-size: 35px;
+        letter-spacing: 5px;
+        padding-top: 20px;
+    }
+
+    p.error-agileits { margin: -6px 0 25px; }
+
+    svg {
+        font-size: 20em;
+        margin-left: 60px;
+        margin-top: -20px;
+        width: 330px !important;
+    }
+}
+
+@media (max-width: 384px) {
+    h1.header-w3ls {
+        font-size: 35px;
+        padding-top: 20px;
+    }
+
+    svg {
+        font-size: 22em;
+        margin-left: 35px;
+        margin-top: -20px;
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    h1.header-w3ls {
+        font-size: 33px;
+        padding-top: 20px;
+    }
+
+    p.copyright { padding: 0 15px 20px; }
+
+    p.error-agileits { margin: -6px 0 25px; }
+}
+
+@media (max-width: 320px) {
+    h1.header-w3ls {
+        font-size: 27px;
+        padding-top: 20px;
+    }
+
+    svg {
+        font-size: 22em;
+        margin-left: 35px;
+        margin-top: -20px;
+        width: 275px !important;
+    }
+
+    p.error-agileits {
+        font-size: 15px;
+        margin: -6px 0 25px;
+    }
+
+    p.copyright { font-size: 14px; }
+}

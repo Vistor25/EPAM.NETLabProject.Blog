@@ -1,0 +1,90 @@
+﻿@model IEnumerable<mvcPL.Models.ArticlesListModel>
+
+
+@{
+    ViewBag.Title = "IndexView";
+}
+
+@*<div class="container col-md-12">
+    
+    @foreach (ArticlesListModel article in Model)
+    {
+        <div>
+            <h2>@Html.ActionLink(article.Title, "View", new {id = article.Id})</h2>
+            <img class="col-md-12" src="~/Content/Article.jpg">
+            <h3>@article.Content</h3>
+            <h5 class="col-md-6">@article.CreationDate</h5>
+            <h5 class="col-md-6">@article.UserName</h5>
+
+        </div>
+        <hr/>
+        <br/>
+    }
+    <p>@Html.ActionLink("Add Article", "Add", "Article", null, new { @class = "btn btn-default col-md-6 col-md-offset-3" })</p>
+</div>*@
+
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            @foreach (var article in Model)
+            {
+                <div class="post-preview">
+                    <a href="/Article/View/@article.Id">
+                        <h2 class="post-title">
+                            @article.Title
+                        </h2>
+                        <h3 class="post-subtitle box">
+                            @article.Content
+                        </h3>
+                    </a>
+
+                    <p class="post-meta">
+                        Posted by <a href="#">@article.UserName</a> on @article.CreationDate
+                    </p>
+                </div>
+                <hr>
+            }
+            @*<div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                    </h2>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014
+                </p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        Science has not yet mastered prophecy
+                    </h2>
+                    <h3 class="post-subtitle">
+                        We predict too much for the next year and yet far too little for the next ten.
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014
+                </p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        Failure is not an option
+                    </h2>
+                    <h3 class="post-subtitle">
+                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014
+                </p>
+            </div>
+            <hr>*@
+            <!-- Pager -->
+            <p>@Html.ActionLink("Add Article", "Add", "Article", null, new {@class = "btn btn-default col-md-6 col-md-offset-3"})</p>
+        </div>
+    </div>
+</div>
+<hr>

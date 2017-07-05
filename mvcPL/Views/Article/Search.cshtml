@@ -1,0 +1,34 @@
+﻿@model IEnumerable<mvcPL.Models.ArticlesListModel>
+
+
+@{
+    ViewBag.Title = "IndexView";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            @foreach (var article in Model)
+            {
+                <div class="post-preview">
+                    <a href="/Home/View/@article.Id">
+                        <h2 class="post-title">
+                            @article.Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            @article.Content
+                        </h3>
+                    </a>
+
+                    <p class="post-meta">
+                        Posted by <a href="#">@article.UserName</a> on @article.CreationDate
+                    </p>
+                </div>
+                <hr>
+            }
+            <!-- Pager -->
+            <p>@Html.ActionLink("Add Article", "Add", "Article", null, new {@class = "btn btn-default col-md-6 col-md-offset-3"})</p>
+        </div>
+    </div>
+</div>
+<hr>
